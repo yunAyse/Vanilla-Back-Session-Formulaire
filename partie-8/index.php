@@ -1,3 +1,12 @@
+<?php
+
+use function PHPSTORM_META\map;
+
+session_start();
+
+// session_unset();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +27,16 @@
 
 <!-- EXERCICE 2 -->
 <?php 
-session_start();
 
-if (isset($_SESSION['last-name']) && !empty($_SESSION['last-name']) && isset($_SESSION['first-name']) && !empty($_SESSION['first-name']) && isset($_SESSION['age']) && !empty($_SESSION['age']) ) {
+if (isset($_SESSION['last-name']) && !empty($_SESSION['last-name']) && 
+isset($_SESSION['first-name']) && !empty($_SESSION['first-name']) && 
+isset($_SESSION['age']) && !empty($_SESSION['age']) ) {
 ?>
-<p><?php echo 'C\'est ok.' ?> </p>
+<p><?php 
+echo $_SESSION['last-name'];
+echo $_SESSION['first-name'];
+echo $_SESSION['age'];?> </p>
+
 
 <?php 
  } else {

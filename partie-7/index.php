@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,14 +7,14 @@
 </head>
 <body>
 
-<?php
+<php
 if (isset($_POST['submit-form'])) {
     $lastName = $_POST['last-name'];
     $firstName = $_POST['first-name'];
     $civilite = $_POST['civilite'];
 ?>
-    <p><?php echo $civilite .' '. $lastName .' '. $firstName; ?></p>
-<?php
+    <p><php echo $civilite .' '. $lastName .' '. $firstName; ?></p>
+<php
 } else {
 ?>
   <form action="" method="POST">
@@ -33,11 +33,11 @@ if (isset($_POST['submit-form'])) {
 
     <button type="submit" name="submit-form">Envoyer</button>
   </form>
-<?php
+<php
 }
 ?>
 </body>
-</html>
+</html> -->
 
 
 
